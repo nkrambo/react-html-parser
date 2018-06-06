@@ -20,7 +20,7 @@ export default function InlineStyleToObject(inlineStyle = '') {
         let [property, value] = stylePropertyValue
           .split(/^([^:]+):/)
           .filter((val, i) => i > 0)
-          .map(item => item.trim().toLowerCase());
+          .map(item => item.trim());
 
         // if there is no value (i.e. no : in the style) then ignore it
         if (value === undefined) {
